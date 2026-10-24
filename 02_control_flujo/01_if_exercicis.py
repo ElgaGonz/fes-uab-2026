@@ -46,8 +46,17 @@
 # revisar el cable de fibra, comprovar el servei del proveïdor o si la connexió
 # sembla funcionar correctament.
 
-LOS=input("L'indicador LOS del terminal òptic està encès? (sí/no)")
+los = input("L'indicador LOS del terminal òptic està encès? (sí/no)")
+internet = input("L'indicador d'Internet del router està encès? (sí/no)")
 
+if los == 'no' and internet == 'sí':
+    print("Revisar el cable de fibra")
+elif los == 'sí' and internet == 'no':
+    print("Comprovar el servei del proveïdor")
+elif los == 'no' and internet == 'no':
+    print("Revisar el cable de fibra i comprovar el servei del proveïdor")
+else:
+    print("La conneció funciona correctament")
 
 
 
