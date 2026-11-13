@@ -41,27 +41,72 @@
 # Crea una funció sumar_tot(*args) que retorni la suma de tots els números rebuts.
 # Prova-la amb 2, 5 i 10 arguments.
 
-def sumar_tot(*args):
-    total=0
-    for numero in args:
-        total+=numero
-    return total
+# def sumar_tot(*args):
+#     total=0
+#     for numero in args:
+#         total+=numero
+#     return total
 
-print(sumar_tot(1,2))
-print(sumar_tot(2,3,2,5,4))
-print(sumar_tot(1,2,3,4,5,6,7,8,9,10))
+# print(sumar_tot(1,2))
+# print(sumar_tot(2,3,2,5,4))
+# print(sumar_tot(1,2,3,4,5,6,7,8,9,10))
+
+
 
 # Exercici 5: Taula de multiplicar
 # Crea una funció taula_multiplicar(numero, limit=10) que imprimeixi la taula de multiplicar
 # del número fins al límit indicat, fent servir range().
 
+# def taula_multiplicar(numero, limit=10):
+#     for num in range(0,limit):
+#         print(numero*num)
+
+# taula_multiplicar(5,7)
+
 # Exercici 6: Informació amb **kwargs
 # Crea una funció mostrar_perfil(**kwargs) que imprimeixi cada parella clau: valor.
 # Crida-la amb les dades d'un estudiant (nom, edat, grau).
 
+# def mostrar_perfil(**kwargs):
+#     for clau, valor in kwargs.items():
+#         print(f"{clau}: {valor}")
+
+# mostrar_perfil(nom="Elga", edat="18", grau="Telecos")
+# print("\n")
+# mostrar_perfil(nom="Mar", edat="19", grau="Telecos")
+
+
+
 # Exercici 7: Reconvertir exercicis anteriors
 # Torna a l'exercici del factorial (while) i del màxim d'una llista (for)
 # i converteix-los en funcions que retornin el resultat.
+
+# Factorial d'un número
+# Demana a l'usuari que introdueixi un número enter positiu.
+# Calcula el seu factorial fent servir un bucle while.
+# El factorial d'un número enter positiu és el producte de tots els números de l'1 fins a aquest número. Per exemple, el factorial de 5
+# 5! = 5 x 4 x 3 x 2 x 1 = 120.
+
+
+# def factorial(num):
+#     result=1
+#     while (num>0):
+#         result *= num
+#         num -= 1
+#     return result
+
+# print(factorial(5))
+
+
+# Buscar el màxim d'una llista
+# Donada la llista de números següent:
+# numeros = [15, 5, 25, 10, 20]
+# Troba el número màxim de la llista fent servir un bucle for.
+
+
+
+
+
 
 # Exercici 8: Comptar vocals
 # Crea una funció comptar_vocals(text) que rebi una cadena de text i retorni quantes vocals

@@ -133,11 +133,11 @@
 # fins que l'encerti.
 # Després de cada intent incorrecte, indica si el número secret és més gran o més petit.
 
-secret=7
+# secret=7
 
-trobar = int(input("Endevina: "))
-while (trobar != secret):
-  if secret>trobar : print("Secret és més gran")
-  else: print ("Secret és més petit")
-  trobar = int(input("Endevina: "))
-
+# trobar = int(input("Endevina: "))
+# while (trobar != secret):
+#   if secret>trobar : print("Secret és més gran")
+#   else: print ("Secret és més petit")
+#   trobar = int(input("Endevina: "))
+# print("Trobat!")

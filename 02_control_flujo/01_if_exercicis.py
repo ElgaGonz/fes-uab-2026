@@ -25,6 +25,15 @@
 # acceptable un nivell entre -27 dBm i -8 dBm, ambdós inclosos.
 # Indica si el nivell és massa baix, acceptable o massa alt.
 
+# nivell = float(input("Introdueix la potència òptica rebuda en dBm: "))
+# if(nivell<-27):
+#     print("Nivell massa baix")
+# elif(nivell<=-8):
+#     print("Nivell acceptable")
+# else:
+#     print("Nivell massa alt")
+
+
 
 
 # Exercici 3: Consum mensual de dades mòbils
@@ -46,17 +55,17 @@
 # revisar el cable de fibra, comprovar el servei del proveïdor o si la connexió
 # sembla funcionar correctament.
 
-los = input("L'indicador LOS del terminal òptic està encès? (sí/no)")
-internet = input("L'indicador d'Internet del router està encès? (sí/no)")
+# los = input("L'indicador LOS del terminal òptic està encès? (sí/no)")
+# internet = input("L'indicador d'Internet del router està encès? (sí/no)")
 
-if los == 'no' and internet == 'sí':
-    print("Revisar el cable de fibra")
-elif los == 'sí' and internet == 'no':
-    print("Comprovar el servei del proveïdor")
-elif los == 'no' and internet == 'no':
-    print("Revisar el cable de fibra i comprovar el servei del proveïdor")
-else:
-    print("La conneció funciona correctament")
+# if los == 'no' and internet == 'sí':
+#     print("Revisar el cable de fibra")
+# elif los == 'sí' and internet == 'no':
+#     print("Comprovar el servei del proveïdor")
+# elif los == 'no' and internet == 'no':
+#     print("Revisar el cable de fibra i comprovar el servei del proveïdor")
+# else:
+#     print("La conneció funciona correctament")
 
 
 
@@ -65,3 +74,13 @@ else:
 # de comunicacions. Indica si el nivell és crític (menys del 20 %), baix
 # (del 20 % al 49 %) o suficient (50 % o més). Rebutja valors fora del rang
 # del 0 % al 100 %.
+
+bateria = float(input("Percentatge de bateria disponible al SAI: "))
+if 0 <= bateria < 20:
+    print("Nivell crític")
+elif 20 <= bateria < 50:
+    print("Nivell baix")
+elif 50 <= bateria <= 100:
+    print("Nivell suficient")
+else:
+    print("Valor fora del rang del 0 % al 100 %")

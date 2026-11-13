@@ -7,6 +7,9 @@
 # Demana el nom d'un tècnic i el nom de la xarxa que està instal·lant.
 # Després, mostra un missatge amb aquesta informació.
 
+nom=input("Introdueix el nom del tècnic: ")
+xarxa=input("Introdueix el nom de la xarxa que està instal·lant: ")
+print(f"El tècnic {nom} està instal·lant la xarxa {xarxa}.")
 
 
 # Exercici 2
@@ -14,10 +17,10 @@
 # en Gbps. Mostra quants segons caldrien per transmetre 1 GB de dades.
 # Suposa que 1 GB = 8 Gb i que la velocitat es manté constant.
 
-# longitud = float(input("Introdueix la longitud de l'enllaç de fibra en quilòmetres: "))
-# velocitat = float(input("Introdueix la velocitat de transmissió en Gbps: "))
-# segons = 8/velocitat
-# print(f"L'enllaç de {longitud} km i velocitat {velocitat} necessita {segons} segons per transmetre 1GB.")
+longitud = float(input("Introdueix la longitud de l'enllaç de fibra en quilòmetres: "))
+velocitat = float(input("Introdueix la velocitat de transmissió en Gbps: "))
+segons = 8/velocitat
+print(f"L'enllaç de {longitud} km i velocitat {velocitat} necessita {segons} segons per transmetre 1GB.")
 
 
 # Exercici 3
@@ -29,6 +32,6 @@ hores = float(input("Introdueix el nombre d'hores de feina: "))
 preu_h = float(input("Introdueix el preu per hora d'una instal·lació de xarxa: "))
 preu_m = float(input("Introdueix el preu del material: "))
 
-cost = hores*preu_h + preu_m
+# cost = hores*preu_h + preu_m
 
-print(f"El cost total és {cost}.")
+# print(f"El cost total és {cost}.")
