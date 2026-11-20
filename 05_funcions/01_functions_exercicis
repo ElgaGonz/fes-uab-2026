@@ -100,10 +100,16 @@
 
 # Buscar el màxim d'una llista
 # Donada la llista de números següent:
-# numeros = [15, 5, 25, 10, 20]
+# llista = [15, 5, 25, 10, 20]
 # Troba el número màxim de la llista fent servir un bucle for.
 
+# def maxim(numeros):
+#     max=numeros[0]
+#     for num in numeros:
+#         if num>max: max=num
+#     return max
 
+# print(f"El número màxim és {maxim(llista)}")
 
 
 
@@ -112,10 +118,45 @@
 # Crea una funció comptar_vocals(text) que rebi una cadena de text i retorni quantes vocals
 # (a, e, i, o, u) conté. Ha de funcionar tant amb majúscules com amb minúscules.
 
+
+# def comptar_vocals(text):
+#     sum=0
+#     vocals = "aeiouàèéíòóúïü"
+#     for lletra in text.lower():
+#         if lletra in vocals:
+#             sum+=1
+#     return sum
+
+# print(f"Hi ha {comptar_vocals("Bon dia")} vocals")
+
+
+
+
 # Exercici 9: Retorn múltiple (mínim i màxim)
 # Crea una funció minim_i_maxim(numeros) que rebi una llista de números i retorni tant el valor
 # mínim com el valor màxim alhora. Desempaqueta el resultat en dues variables.
 
+
+# def minim_i_maxim(numeros):
+#     min=numeros[0]
+#     max=numeros[0]
+#     for num in numeros:
+#         if num<min: min=num
+#         if num>max: max=num
+#     return min, max
+
+# min, max = minim_i_maxim([15, 3, 42, 8, 23, 4])
+# print(f"El número més petit és {min} i el més gran {max}")
+
+
 # Exercici 10: Palíndrom
 # Crea una funció es_palindrom(text) que retorni True si una paraula es llegeix igual d'esquerra a dreta
 # que de dreta a esquerra (ignorant majúscules i minúscules), i False en cas contrari.
+
+
+# def es_palindrom(text):
+#     text_girar=text.lower()
+#     return text_girar==text_girar[::-1]
+
+# print(f"Anna és palíndrom? {es_palindrom("Anna")}")
+# print(f"Lluís és palíndrom? {es_palindrom("Lluís")}")
