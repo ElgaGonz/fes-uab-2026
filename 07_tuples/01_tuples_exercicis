@@ -13,3 +13,9 @@ comptador = numeros.count(3)
 print(f"El número 3 apareix {comptador} vegades a la tupla.")
 
 # 3️⃣ Crea una funció que rebi una tupla amb números i retorni una tupla nova amb els números ordenats de menor a major.
+
+tupla_numeros = (5, 2, 9, 1, 5, 6)
+def ordenar_tupla(tupla):
+    llista=list(tupla)
+    llista.sort()
+    return tuple(llista)

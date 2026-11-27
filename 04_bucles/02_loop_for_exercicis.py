@@ -116,6 +116,11 @@ print(f"La taxa d'error és: {taxa_error:.2%}")
 
 # Exercici 10: Període d'un senyal
 # Donades les freqüències següents, en hertzs:
-# frequencies = [50, 100, 500, 1000]
+frequencies = [50, 100, 500, 1000]
 # Fent servir un bucle for, calcula el període de cada senyal amb la fórmula
 # T = 1 / f i imprimeix cada freqüència amb el seu període en segons.
+
+
+for f in frequencies:
+    T = 1 / f
+    print(f"Freqüència: {f} Hz, Període: {T} s")
