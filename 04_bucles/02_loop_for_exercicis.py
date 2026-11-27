@@ -5,21 +5,46 @@
 # Exercici 1: Imprimir números parells
 # Imprimeix tots els números parells del 2 al 20 (inclosos) fent servir un bucle for.
 
+for i in range(2, 21, 2):
+    print(i)
+
 # Exercici 2: Calcular la mitjana d'una llista
 # Donada la llista de números següent:
-# numeros = [10, 20, 30, 40, 50]
+numeros = [10, 20, 30, 40, 50]
 # Calcula la mitjana dels números fent servir un bucle for.
+
+suma = 0
+for i in numeros:
+    suma += i
+
+mitjana = suma / len(numeros)
+print("La mitjana és:", mitjana)
+
 
 # Exercici 3: Buscar el màxim d'una llista
 # Donada la llista de números següent:
-# numeros = [15, 5, 25, 10, 20]
+numeros = [15, 5, 25, 10, 20]
 # Troba el número màxim de la llista fent servir un bucle for.
+
+maxim = numeros[0]
+for i in numeros:
+    if i > maxim:
+        maxim = i
+
+print("El màxim és:", maxim)
 
 # Exercici 4: Filtrar cadenes per longitud
 # Donada la llista de paraules següent:
-# paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
+paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
 # Crea una llista nova que contingui només les paraules amb més de 5 lletres
 # fent servir un bucle for i list comprehension.
+
+paraules_llargues = []
+for paraula in paraules:
+    if len(paraula) > 5:
+        paraules_llargues.append(paraula)
+
+print("Paraules amb més de 5 lletres:", paraules_llargues)
 
 # Exercici 5: Comptar paraules que comencen per una lletra
 # Donada la llista de paraules següent:
