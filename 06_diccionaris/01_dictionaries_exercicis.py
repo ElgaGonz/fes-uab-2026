@@ -43,9 +43,19 @@ print("email" in estudiant)
 # Exercici 5: Recórrer un diccionari
 # Recorre el diccionari amb un bucle for i items() i imprimeix cada parella com "clau: valor".
 
-
+for clau, valor in estudiant.items():
+    print(f"{clau}: {valor}")
 
 # Exercici 6: Comptar paraules
 # Donada la llista de paraules:
-# paraules = ["sol", "lluna", "sol", "estrella", "lluna", "sol"]
+paraules = ["sol", "lluna", "sol", "estrella", "lluna", "sol"]
 # Crea un diccionari que indiqui quantes vegades apareix cada paraula.
+
+vegades = {}
+for paraula in paraules:
+    if paraula in vegades:
+        vegades[paraula] += 1
+    else:
+        vegades[paraula] = 1
+
+print(vegades)
